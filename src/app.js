@@ -7,7 +7,11 @@ server.use(cors());
 
 let newUser = {
 };
-let arrayTweets = [];
+let arrayTweets = [{
+  username: "",
+  avatar: "",
+  tweet: ""
+}];
 // SERVER SIGN UP 
 let users = [];
 
@@ -37,7 +41,7 @@ server.post("/tweets", (req, res) => {
       arrayTweets.shift();
     }
     arrayTweets.push(tweet);
-    res.send(arrayTweets);
+    res.send("OK");
   }
 })
 

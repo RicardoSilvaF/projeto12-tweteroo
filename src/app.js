@@ -7,11 +7,7 @@ server.use(cors());
 
 let newUser = {
 };
-let arrayTweets = [{
-  username: "",
-  avatar: "",
-  tweet: ""
-}];
+let arrayTweets = [];
 // SERVER SIGN UP 
 let users = [];
 

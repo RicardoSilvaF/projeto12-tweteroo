@@ -37,7 +37,7 @@ server.post("/tweets", (req, res) => {
       arrayTweets.shift();
     }
     arrayTweets.push(tweet);
-    res.send("OK");
+    res.send(arrayTweets);
   }
 })
 
